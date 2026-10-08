@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Plan weekly work",
+    "content": "Prepare priorities for the upcoming week.",
+    "tag": "Work"
+  },
+  {
+    "title": "Buy groceries",
+    "content": "Milk, bread, vegetables and fruit.",
+    "tag": "Shopping"
+  },
+  {
+    "title": "Read about MongoDB",
+    "content": "Learn Mongoose schemas and queries.",
+    "tag": "Ideas"
+  }
+]
