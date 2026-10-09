@@ -14,7 +14,7 @@ const userSchema = new Schema(
 );
 
 userSchema.pre('save', function setDefaultUsername() {
-  this.username = this.email;
+  if (!this.username) this.username = this.email;
 });
 
 userSchema.methods.toJSON = function toJSON() {

@@ -10,7 +10,11 @@ export const updateUserAvatar = async (req, res) => {
     req.file.buffer,
     req.user._id,
   );
-  await User.findByIdAndUpdate(req.user._id, { avatar });
+  await User.findByIdAndUpdate(
+    req.user._id,
+    { avatar },
+    { returnDocument: 'after' },
+  );
 
   res.status(200).json({ url: avatar });
 };
